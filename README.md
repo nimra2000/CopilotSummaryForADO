@@ -1,6 +1,6 @@
 # Extending Copilot Summary for Azure DevOps
 A browser extension to provide personalized summaries for Azure DevOps work items.
-![image](https://github.com/user-attachments/assets/c1ce7c47-1b55-4110-b09d-8b3000dc1703)
+[Video demo](https://drive.google.com/file/d/1VIb3PV71lUZsHP03VQyA4f-IT19oRjK-/view?usp=sharing)
 
 
 ## ✨ Features
