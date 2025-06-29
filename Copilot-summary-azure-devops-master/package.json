@@ -1,0 +1,34 @@
+{
+  "name": "copilot-summary",
+  "version": "1.0.0",
+  "description": "A Chrome browser extension that summarizes Azure DevOps work item descriptions and comments using Azure OpenAI (Copilot Summary)",
+  "main": "manifest.json",
+  "scripts": {
+    "build": "echo 'Extension is ready to load in Chrome'",
+    "test": "echo 'Open create_icons.html in browser to generate icons'",
+    "package": "echo 'Zip all files except node_modules and .git'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "azure-devops",
+    "openai",
+    "summarization",
+    "work-items",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ado-work-item-summarizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ado-work-item-summarizer/issues"
+  },
+  "homepage": "https://github.com/yourusername/ado-work-item-summarizer#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

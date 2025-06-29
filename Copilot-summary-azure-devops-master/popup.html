@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Summary</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="copilot-header">
+        <img src="icons/icon128.png" alt="Copilot Logo" class="copilot-logo">
+        <span class="copilot-title">Copilot Summary</span>
+    </div>
+    <div class="container">
+        <div class="personalization-section" id="personalizationSection">
+            <div class="personalization-greeting">
+                <span id="personalizationGreeting">Hi, User. Tailor your experience.</span>
+            </div>
+            <div class="user-info-container" style="justify-content: center; margin-bottom: 10px;">
+                <img id="userProfilePic" class="user-profile-pic" src="" alt="Profile picture" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="userRole">Your Role:</label>
+                <select id="userRole">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Engineering Manager">Engineering Manager</option>
+                    <option value="Program Manager">Program Manager</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="summaryStyle">Summary Style:</label>
+                <select id="summaryStyle">
+                    <option value="Technical">Technical</option>
+                    <option value="General Audience">General Audience</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <button id="summarizeBtn" class="btn">
+                <span class="btn-icon">✨</span>
+                Generate Summary
+            </button>
+        </div>
+
+        <div class="summary-section" id="summarySection" style="display: none;">
+            <div class="summary-header">
+                <h3>Personalized Summary</h3>
+                <div class="personalization-badge" id="personalizationBadge">
+                    <img id="badgeProfilePic" class="badge-profile-pic" src="" alt="Profile picture" style="display: none;">
+                    <span class="badge-text"></span>
+                </div>
+            </div>
+            <div class="summary-content" id="summaryContent">
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <p>Generating summary...</p>
+                </div>
+            </div>
+            
+            <!-- Feedback Section -->
+            <div class="feedback-section" id="feedbackSection" style="display: none;">
+                <div class="feedback-header">
+                    <h4>Was this summary helpful?</h4>
+                </div>
+                <div class="feedback-actions">
+                    <button id="feedbackBtn" class="feedback-btn">
+                        <span class="btn-icon">💬</span>
+                        Send Feedback
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-section" id="errorSection" style="display: none;">
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+    </div>
+
+    <!-- Load user config if present -->
+    <!-- Users: Copy config.example.js to config.js and fill in your credentials -->
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 
